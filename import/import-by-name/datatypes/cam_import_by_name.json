@@ -1,0 +1,32 @@
+{
+    "name": "cam_import_by_name",
+    "label": "CAM Import Cloud Resources",
+    "description": "Data structure describing the attributes required to run a resource import REST API against Cloud Automation Manager",
+    "attributes": [
+        {
+            "name": "cam_cloudconnection_name",
+            "type": "string",
+            "description": "Name of the CAM cloud connection used to connect to the cloud where the instance is going to be imported from",
+            "label": "CAM Cloud Connection Name",
+            "required": "true",
+            "secured": "false",
+            "hidden": "false"
+        },
+        {
+            "name": "cam_template_name",
+            "type": "string",
+            "description": "Name of the CAM import template used as a base for terraform import",
+            "label": "CAM Import Template Name",
+            "required": "true",
+            "secured": "false"
+        },
+        {
+            "name": "cam_template_version_name",
+            "type": "string",
+            "description": "Name of the CAM import template version used as a base for terraform import",
+            "label": "CAM Import Template Version Name",
+            "required": "false",
+            "secured": "false"
+        }
+    ]
+}

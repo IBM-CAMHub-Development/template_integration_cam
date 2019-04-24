@@ -1,0 +1,32 @@
+{
+    "name": "cam_connection",
+    "label": "CAM Connection",
+    "description": "Data structure describing the attributes required to run a REST API against Cloud Automation Manager",
+    "attributes": [
+        {
+            "name": "cam_hostname",
+            "type": "string",
+            "description": "CAM Host Name or IP",
+            "label": "CAM Host Name or IP",
+            "required": "true",
+            "secured": "false"
+        },
+        {
+            "name": "cam_username",
+            "type": "string",
+            "description": "CAM user name",
+            "label": "CAM username",
+            "required": "true",
+            "secured": "false",
+            "default": "admin"
+        },
+        {
+            "name": "cam_password",
+            "type": "string",
+            "description": "CAM password",
+            "label": "CAM password",
+            "required": "true",
+            "secured": "true"
+        }
+    ]
+}

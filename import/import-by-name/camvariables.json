@@ -1,0 +1,137 @@
+{
+  "input_datatypes": [
+    {
+      "name": "cam_connection",
+      "label": "CAM Connection"
+    },
+    {
+      "name": "cam_import_by_name",
+      "label": "CAM Import Cloud Resources"
+    }
+  ],
+  "input_groups": [
+    {
+      "name": "CAM",
+      "label": "CAM Connection"
+    },
+    {
+      "name": "Import",
+      "label": "CAM Import Cloud Resources"
+    },
+    {
+      "name": "Cloud",
+      "label": "Cloud Native"
+    }
+  ],
+  "template_input_params": [
+    {
+      "name": "cam_hostname",
+      "type": "string",
+      "description": "CAM host name or IP",
+      "label": "CAM host name or IP",
+      "required": true,
+      "secured": false,
+      "group_name": "CAM",
+      "hidden": "false",
+      "default": "${cam_connection.cam_hostname}"
+    },
+
+    {
+      "name": "cam_username",
+      "type": "string",
+      "description": "CAM user name",
+      "label": "CAM username",
+      "required": true,
+      "secured": false,
+      "group_name": "CAM",
+      "hidden": "false",
+      "default": "${cam_connection.cam_username}"
+    },
+    {
+      "name": "cam_password",
+      "type": "string",
+      "description": "CAM password",
+      "label": "CAM password",
+      "required": true,
+      "secured": true,
+      "group_name": "CAM",
+      "hidden": "false",
+      "default": "${cam_connection.cam_password}"
+    },
+    {
+      "name": "cam_cloudconnection_name",
+      "type": "string",
+      "description": "Name of the CAM cloud connection used to connect to the cloud where the instance is going to be imported from",
+      "label": "CAM Cloud Connection Name",
+      "required": true,
+      "secured": false,
+      "immutable": false,
+      "group_name": "Import",
+      "hidden": "false",
+      "default": "${cam_import_by_name.cam_cloudconnection_name}"
+    },
+    {
+      "name": "cam_template_name",
+      "type": "string",
+      "description": "Name of the CAM import template used as a base for terraform import",
+      "label": "CAM Import Template Name",
+      "required": true,
+      "secured": false,
+      "group_name": "Import",
+      "hidden": "false",
+      "default": "${cam_import_by_name.cam_template_name}"
+    },
+    {
+      "name": "cam_template_version_name",
+      "type": "string",
+      "description": "Name of the CAM import template version used as a base for terraform import",
+      "label": "CAM Import Template Version Name",
+      "required": true,
+      "secured": false,
+      "group_name": "Import",
+      "hidden": "false",
+      "default": "${cam_import_by_name.cam_template_version_name}"
+    },
+    {
+      "name": "cam_instancename",
+      "type": "string",
+      "description": "Name of the CAM instance that will be created after the import",
+      "label": "CAM Instance Name",
+      "required": true,
+      "group_name": "Import",
+      "hidden": "false",
+      "secured": false
+    },
+    {
+      "name": "cam_namespace",
+      "type": "string",
+      "description": "CAM namespace into which the imported instance will be created",
+      "label": "CAM namespace",
+      "required": true,
+      "secured": false,
+      "group_name": "Import",
+      "hidden": "false",
+      "default": "default"
+    },
+    {
+      "name": "cloud_instance_id",
+      "type": "string",
+      "description": "Cloud native ID of the instance to be imprted. e.g. 338aefb7-6987-4c43-88d5-09351b549b7f",
+      "label": "Cloud Native Instance ID",
+      "required": true,
+      "group_name": "Cloud",
+      "hidden": "false",
+      "secured": false
+    }
+  ],
+  "template_output_params": [
+    {
+      "name": "imported_vm_ipv4",
+      "label": "VM IPV4",
+      "description": "IPV4 of the imported virtual machine",
+      "type": "string",
+      "hidden": "false",
+      "secured": false
+    }
+  ]
+}
