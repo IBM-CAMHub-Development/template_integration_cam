@@ -14,4 +14,4 @@ PARAM_ID_FROM_PROVIDER=\(.id_from_provider)"')"
 source ./scripts/functions.sh
 run_cam_import ${PARAM_CAM_IP} ${PARAM_AUTH_USER} ${PARAM_AUTH_PASSWORD} ${PARAM_INSTANCE_NAME} ${PARAM_INSTANCE_NAMESPACE} ${PARAM_CC_ID} ${PARAM_TEMPLATE_ID} ${PARAM_TEMPLATE_VERSION_ID} ${PARAM_ID_FROM_PROVIDER}
 
-jq -n --arg ipv4 "$IMPORTED_VM_IPV4" --arg name "$IMPORTED_VM_NAME" '{"ipv4":$ipv4, {"name":$name}}'
+jq -n --arg ipv4 "$IMPORTED_VM_IPV4" --arg name "$IMPORTED_VM_NAME" '{"ipv4":$ipv4, "name":$name}'
