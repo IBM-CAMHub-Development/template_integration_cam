@@ -33,6 +33,7 @@
       "secured": false,
       "group_name": "CAM",
       "hidden": "false",
+      "immutable": false,
       "default": "${cam_connection.cam_hostname}"
     },
 
@@ -45,6 +46,7 @@
       "secured": false,
       "group_name": "CAM",
       "hidden": "false",
+      "immutable": false,
       "default": "${cam_connection.cam_username}"
     },
     {
@@ -56,6 +58,7 @@
       "secured": true,
       "group_name": "CAM",
       "hidden": "false",
+      "immutable": false,
       "default": "${cam_connection.cam_password}"
     },
     {
@@ -68,6 +71,7 @@
       "immutable": false,
       "group_name": "Import",
       "hidden": "false",
+      "immutable": false,
       "default": "${cam_import_by_name.cam_cloudconnection_name}"
     },
     {
@@ -79,6 +83,7 @@
       "secured": false,
       "group_name": "Import",
       "hidden": "false",
+      "immutable": false,
       "default": "${cam_import_by_name.cam_template_name}"
     },
     {
@@ -90,6 +95,7 @@
       "secured": false,
       "group_name": "Import",
       "hidden": "false",
+      "immutable": false,
       "default": "${cam_import_by_name.cam_template_version_name}"
     },
     {
@@ -100,6 +106,7 @@
       "required": true,
       "group_name": "Import",
       "hidden": "false",
+      "immutable": false,
       "secured": false
     },
     {
@@ -111,6 +118,7 @@
       "secured": false,
       "group_name": "Import",
       "hidden": "false",
+      "immutable": false,
       "default": "default"
     },
     {
@@ -121,6 +129,7 @@
       "required": true,
       "group_name": "Cloud",
       "hidden": "false",
+      "immutable": false,
       "secured": false
     }
   ],
@@ -131,6 +140,7 @@
       "description": "IPV4 of the imported virtual machine",
       "type": "string",
       "hidden": "false",
+      "immutable": false,
       "secured": false
     }
   ]
