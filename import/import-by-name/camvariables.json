@@ -34,7 +34,7 @@
       "required": true,
       "secured": false,
       "group_name": "CAM",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "default": "${cam_connection.cam_hostname}"
     },
@@ -47,7 +47,7 @@
       "required": true,
       "secured": false,
       "group_name": "CAM",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "default": "${cam_connection.cam_username}"
     },
@@ -59,7 +59,7 @@
       "required": true,
       "secured": true,
       "group_name": "CAM",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "default": "${cam_connection.cam_password}"
     },
@@ -71,7 +71,7 @@
       "required": true,
       "secured": false,
       "group_name": "Import",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "default": "${cam_import_by_name.cam_cloudconnection_name}"
     },
@@ -83,7 +83,7 @@
       "required": true,
       "secured": false,
       "group_name": "Import",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "default": "${cam_import_by_name.cam_template_name}"
     },
@@ -95,7 +95,7 @@
       "required": true,
       "secured": false,
       "group_name": "Import",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "default": "${cam_import_by_name.cam_template_version_name}"
     },
@@ -106,7 +106,7 @@
       "label": "CAM Instance Name",
       "required": true,
       "group_name": "Import",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "secured": false
     },
@@ -118,7 +118,7 @@
       "required": true,
       "secured": false,
       "group_name": "Import",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "default": "default"
     },
@@ -129,7 +129,7 @@
       "label": "Cloud Native Instance ID",
       "required": true,
       "group_name": "Cloud",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "secured": false
     }
@@ -140,7 +140,7 @@
       "label": "VM IPV4",
       "description": "IPV4 of the imported virtual machine",
       "type": "string",
-      "hidden": "false",
+      "hidden": false,
       "immutable": false,
       "secured": false
     }

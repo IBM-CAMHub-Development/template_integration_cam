@@ -32,7 +32,7 @@
       "required": true,
       "secured": false,
       "group_name": "CAM",
-      "hidden": "false",
+      "hidden": false,
       "default": "${cam_connection.cam_hostname}"
     },
 
@@ -44,7 +44,7 @@
       "required": true,
       "secured": false,
       "group_name": "CAM",
-      "hidden": "false",
+      "hidden": false,
       "default": "${cam_connection.cam_username}"
     },
     {
@@ -55,7 +55,7 @@
       "required": true,
       "secured": true,
       "group_name": "CAM",
-      "hidden": "false",
+      "hidden": false,
       "default": "${cam_connection.cam_password}"
     },
     {
@@ -67,7 +67,7 @@
       "secured": false,
       "immutable": false,
       "group_name": "Import",
-      "hidden": "false",
+      "hidden": false,
       "default": "${cam_import_by_id.cam_cloudconnection_id}"
     },
     {
@@ -78,7 +78,7 @@
       "required": true,
       "secured": false,
       "group_name": "Import",
-      "hidden": "false",
+      "hidden": false,
       "default": "${cam_import_by_id.cam_template_id}"
     },
     {
@@ -89,7 +89,7 @@
       "required": true,
       "secured": false,
       "group_name": "Import",
-      "hidden": "false",
+      "hidden": false,
       "default": "${cam_import_by_id.cam_template_version_id}"
     },
     {
@@ -99,7 +99,7 @@
       "label": "CAM Instance Name",
       "required": true,
       "group_name": "Cloud",
-      "hidden": "false",
+      "hidden": false,
       "secured": false
     },
     {
@@ -110,7 +110,7 @@
       "required": true,
       "secured": false,
       "group_name": "Cloud",
-      "hidden": "false",
+      "hidden": false,
       "default": "default"
     },
     {
@@ -120,7 +120,7 @@
       "label": "Cloud Native Instance ID",
       "required": true,
       "group_name": "Cloud",
-      "hidden": "false",
+      "hidden": false,
       "secured": false
     }
   ],

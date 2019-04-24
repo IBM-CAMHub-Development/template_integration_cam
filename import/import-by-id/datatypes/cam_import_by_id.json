@@ -8,25 +8,25 @@
             "type": "string",
             "description": "CAM ID of the cloud connection used to connect to the cloud where the instance is going to be imported from",
             "label": "CAM Cloud Connection ID",
-            "required": "true",
-            "secured": "false",
-            "hidden": "false"
+            "required": true,
+            "secured": false,
+            "hidden": false
         },
         {
             "name": "cam_template_id",
             "type": "string",
             "description": "CAM ID of the import template used as a base for terraform import",
             "label": "CAM Import Template ID",
-            "required": "true",
-            "secured": "false"
+            "required": true,
+            "secured": false
         },
         {
             "name": "cam_template_version_id",
             "type": "string",
             "description": "CAM ID of the import template version used as a base for terraform import",
             "label": "CAM Import Template Version ID",
-            "required": "false",
-            "secured": "false"
+            "required": false,
+            "secured": false
         }
     ]
 }

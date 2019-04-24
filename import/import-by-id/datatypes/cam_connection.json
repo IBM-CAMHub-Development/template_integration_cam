@@ -8,16 +8,16 @@
             "type": "string",
             "description": "CAM Host Name or IP",
             "label": "CAM Host Name or IP",
-            "required": "true",
-            "secured": "false"
+            "required": true,
+            "secured": false
         },
         {
             "name": "cam_username",
             "type": "string",
             "description": "CAM user name",
             "label": "CAM username",
-            "required": "true",
-            "secured": "false",
+            "required": true,
+            "secured": false,
             "default": "admin"
         },
         {
@@ -25,8 +25,8 @@
             "type": "string",
             "description": "CAM password",
             "label": "CAM password",
-            "required": "true",
-            "secured": "true"
+            "required": true,
+            "secured": true
         }
     ]
 }
