@@ -9,6 +9,8 @@
       "label": "CAM Import Cloud Resources"
     }
   ],
+  "output_datatypes": [
+  ],
   "input_groups": [
     {
       "name": "CAM",
@@ -68,7 +70,6 @@
       "label": "CAM Cloud Connection Name",
       "required": true,
       "secured": false,
-      "immutable": false,
       "group_name": "Import",
       "hidden": "false",
       "immutable": false,
