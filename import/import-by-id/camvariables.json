@@ -131,6 +131,15 @@
       "description": "IPV4 of the imported virtual machine",
       "type": "string",
       "secured": false
+    },
+    {
+      "name": "imported_vm_name",
+      "label": "VM Name",
+      "description": "Name of the imported virtual machine",
+      "type": "string",
+      "hidden": false,
+      "immutable": false,
+      "secured": false
     }
   ]
 }

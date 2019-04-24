@@ -22,7 +22,6 @@ variable "cam_template_name" {
 variable "cam_template_version_name" {
   description = "Name of the CAM import template version used as a base for terraform import "
 }
-
 variable "cloud_instance_id" {
   description = "Cloud native ID of the instance to be imprted. e.g. 338aefb7-6987-4c43-88d5-09351b549b7f "
 }

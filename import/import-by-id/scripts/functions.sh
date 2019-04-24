@@ -76,7 +76,11 @@ function run_cam_import() {
         IMPORTED_VM_IPV4=`curl -k -X POST \
         'https://'$PARAM_CAM_IP':30000/cam/api/v1/stacks/'$CAM_INSTANCE_ID'/retrieve?tenantId='$CAM_TENANT_ID'&cloudOE_spaceGuid='$PARAM_INSTANCE_NAMESPACE \
         -H 'Content-Type: application/json' \
-        -H 'Authorization: bearer '$CAM_TOKEN | jq --raw-output '.data.details.resources[0].details.access_ip_v4'` 
+        -H 'Authorization: bearer '$CAM_TOKEN | jq --raw-output '.data.details.resources[0].details.access_ip_v4'`
+        IMPORTED_VM_NAME=`curl -k -X POST \
+        'https://'$PARAM_CAM_IP':30000/cam/api/v1/stacks/'$CAM_INSTANCE_ID'/retrieve?tenantId='$CAM_TENANT_ID'&cloudOE_spaceGuid='$PARAM_INSTANCE_NAMESPACE \
+        -H 'Content-Type: application/json' \
+        -H 'Authorization: bearer '$CAM_TOKEN | jq --raw-output '.data.details.resources[0].details.name'` 
     else
         exit -1
         #echo "Failed to import instance "$CAM_INSTANCE_ID ". Instance status is "$CAM_INSTANCE_STATUS
