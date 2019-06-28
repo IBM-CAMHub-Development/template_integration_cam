@@ -23,7 +23,6 @@
       }
    },
    "metadata": {
-     "displayName": "Import cloud resource into CAM",
      "providerDisplayName": "OpenStack",
      "longDescription": "Template which will import external cloud resources into Cloud Automation Manager by running CAM REST APIs",
      "bullets": [
